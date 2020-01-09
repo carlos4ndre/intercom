@@ -1,3 +1,6 @@
+![Travis build](https://travis-ci.com/carlos4ndre/intercom.svg?branch=master)
+
+
 Intercom Code Challenge
 =======================
 
