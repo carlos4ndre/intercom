@@ -16,7 +16,8 @@ unit: ## Run unit tests
 integration: ## Run integration tests
 	tox -e integration
 
-test: lint security unit integration ## Run tests
+test: ## Run tests
+	tox --parallel--safe-build
 
 build: ## Build docker image
 	docker build --tag intercom .
