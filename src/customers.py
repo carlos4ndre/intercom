@@ -5,7 +5,7 @@ from src.constants import (
     DUBLIN_OFFICE_LONGITUDE,
     CUSTOMERS_FILE_PATH,
 )
-from src.geo import distance_between_coordinates
+from src.utils.geo import distance_between_coordinates
 from typing import List
 
 logger = logging.getLogger(__name__)

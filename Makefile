@@ -17,3 +17,9 @@ integration: ## Run integration tests
 	tox -e integration
 
 test: lint security unit integration ## Run tests
+
+build: ## Build docker image
+	docker build --tag intercom .
+
+run: ## Run docker image
+	docker run --rm intercom

@@ -14,12 +14,17 @@ You must use the first formula from this Wikipedia article to calculate distance
 The GPS coordinates for our Dublin office are 53.339428, -6.257664.
 
 
-## Setup
+## Requirements
 
-### Install Python 3
-
-This application was developed on Python 3.7, so this is the recommended version (see [installation instructions](https://www.python.org/downloads/)).
+* Python 3.7
+* Tox
+* Docker
 
 ## Run tests
 
 $ make test
+
+## Run script
+
+$ make build
+$ make run
