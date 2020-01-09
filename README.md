@@ -13,18 +13,26 @@ You must use the first formula from this Wikipedia article to calculate distance
 
 The GPS coordinates for our Dublin office are 53.339428, -6.257664.
 
+# Solution
 
-## Requirements
+* Used reposity pattern to abstract the data source, which currently is a plain text file with all customer data, this will allow for easier transition into a database
+* Used type hint for reducing type mistakes
+* Added security checks
+* Added unit and integration tests
+* Added simple CI/CD job for running the tests on travis
+* Run the script in Docker for better portability
+
+# Requirements
 
 * Python 3.7.x
 * Tox 3.x
 * Docker
 
-## Run tests
+# Run tests
 
 $ make test
 
-## Run script
+# Run script
 
 $ make build
 $ make run
