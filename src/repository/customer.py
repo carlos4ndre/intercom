@@ -23,13 +23,13 @@ class CustomerStore:
     def find_customers_by_distance(center: Point, distance_km: int) -> List[Customer]:
         results = {}
 
-        logger.info("Find customers within {} km".format(distance_km))
+        logger.info("Find customers within %s km", distance_km)
         for customer in CustomerStore.all():
             if is_point_within_range(center, customer.location, distance_km):
                 results[customer.id] = customer
-                logger.debug("Customer id {} is within range", customer.id)
+                logger.debug("Customer id %d is within range", customer.id)
             else:
-                logger.debug("Customer id {} is not within range", customer.id)
+                logger.debug("Customer id %d is not within range", customer.id)
 
                 sorted_results = [v for (k, v) in sorted(results.items())]
         return sorted_results
