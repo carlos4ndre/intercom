@@ -28,4 +28,4 @@ run: ## Run docker image
 clean: ## Remove project artifacts
 	find . -name '*.pyc' -delete
 	find . -name '__pycache__' -type d | xargs rm -rf
-	rm -rf .venv/ .cache/ .tox/ .mypy_cache/ .pytest_cache/ .hypothesis/
+	rm -rf .venv/ venv/ .cache/ .tox/ .mypy_cache/ .pytest_cache/ .hypothesis/
