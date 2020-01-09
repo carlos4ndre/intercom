@@ -5,7 +5,7 @@ help: ## List all Makefile targets
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 lint: ## Run linters
-	tox -e black,flake8
+	tox -e black,flake8,mypy
 
 security: ## Run security checks
 	tox -e bandit,safety
