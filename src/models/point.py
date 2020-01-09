@@ -9,7 +9,10 @@ class Point:
         else:
             raise ValueError("latitude or longitude cannot be empty")
 
-    def __eq__(self, other):
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, Point):
+            return NotImplemented
+
         return math.isclose(
             self.latitude, self.latitude, rel_tol=1e-5
         ) and math.isclose(self.longitude, self.longitude, rel_tol=1e-5)

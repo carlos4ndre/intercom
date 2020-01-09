@@ -10,6 +10,7 @@ class Customer:
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, Customer):
             return NotImplemented
+
         return (
             self.id == other.id
             and self.name == other.name
