@@ -15,4 +15,8 @@ def display_nearby_customers():
     print(tabulate(rows, headers=["User ID", "Name"]))
 
 
-display_nearby_customers()
+def main():
+    display_nearby_customers()
+
+
+main()

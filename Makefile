@@ -13,4 +13,7 @@ security: ## Run security checks
 unit: ## Run unit tests
 	tox -e unit
 
+integration: ## Run integration tests
+	tox -e integration
+
 test: lint security unit integration ## Run tests
