@@ -16,8 +16,8 @@ The GPS coordinates for our Dublin office are 53.339428, -6.257664.
 
 ## Requirements
 
-* Python 3.7
-* Tox
+* Python 3.7.x
+* Tox 3.x
 * Docker
 
 ## Run tests
