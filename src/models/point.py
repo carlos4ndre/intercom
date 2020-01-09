@@ -2,6 +2,8 @@ import math
 
 
 class Point:
+    """Point with geographical coordinates."""
+
     def __init__(self, latitude: float, longitude: float):
         if latitude is None:
             raise ValueError("latitude cannot be empty")

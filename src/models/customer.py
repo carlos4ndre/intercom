@@ -2,6 +2,8 @@ from .point import Point
 
 
 class Customer:
+    """Basic customer information."""
+
     def __init__(self, _id: int, name: str, location: Point):
         self.id = _id
         self.name = name
