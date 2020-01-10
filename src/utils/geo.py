@@ -27,16 +27,14 @@ def distance_between_points(p1: Point, p2: Point) -> float:
     :return: Total distance in kilometers between the two points
     :rtype: float
     """
-    dlat = convert_degrees_to_radians(p2.latitude - p1.latitude)
     dlon = convert_degrees_to_radians(p2.longitude - p1.longitude)
     lat1 = convert_degrees_to_radians(p1.latitude)
     lat2 = convert_degrees_to_radians(p2.latitude)
 
-    a = math.pow(math.sin(dlat / 2), 2) + math.pow(math.sin(dlon / 2), 2) * math.cos(
-        lat1
-    ) * math.cos(lat2)
-
-    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    a = math.sin(lat1) * math.sin(lat2) + math.cos(lat1) * math.cos(lat2) * math.cos(
+        dlon
+    )
+    c = math.acos(a)
 
     return EARTH_RADIUS_KM * c
 
