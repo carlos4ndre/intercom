@@ -46,6 +46,5 @@ class CustomerStore:
                 logger.debug("Customer id %d is within range", customer.id)
             else:
                 logger.debug("Customer id %d is not within range", customer.id)
-
-                sorted_results = [v for (k, v) in sorted(results.items())]
+        sorted_results = [v for (k, v) in sorted(results.items())]
         return sorted_results
