@@ -1,9 +1,6 @@
 import math
-import logging
 from src.models import Point
 from src.constants import EARTH_RADIUS_KM
-
-logger = logging.getLogger(__name__)
 
 
 def convert_degrees_to_radians(value: float) -> float:
