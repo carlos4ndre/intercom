@@ -18,7 +18,7 @@ The GPS coordinates for our Dublin office are 53.339428, -6.257664.
 
 ### Solution
 
-* Used reposity pattern to abstract the data source, which currently is a plain text file with all customer data, this will allow for easier transition into a database
+* Used repository pattern to abstract the data source, which currently is a plain text file with all customer data, this will allow for easier transition into a database
 * Used type hint for reducing type mistakes
 * Added security checks
 * Added unit and integration tests
