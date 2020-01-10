@@ -33,9 +33,13 @@ The GPS coordinates for our Dublin office are 53.339428, -6.257664.
 
 ### Run tests
 
+``` bash
 $ make test
+```
 
 ### Run script
 
+```bash
 $ make build
 $ make run
+```
